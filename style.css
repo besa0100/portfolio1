@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+
+}
+
+img {
+    width:  100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* BURGERMENU */
+#menuknap {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 2rem;
+}
+
+header {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hidden {
+    display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+/**** BURGER MENU ****/
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    position: absolute;
+    top: 160px;
+    left: 330px;
+
+}
+
+#forside h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 760px;
+    left: 600px;
+}
+
+#forside h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    top: 757px;
+    left: 750px;
+}
+
+
+
+
+
+#forside p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    left: 610px;
+
+}
+
+
+
+#forside .boks {
+    position: absolute;
+    width: 1440px;
+    height: 820px;
+    background-color: whitesmoke;
+}
+
+/* FORSIDE SLUT */
+
+
+/* PROJECTS START */
+
+#projects .figure{
+    margin: 0;
+}
+
+#projects .col_left p,
+#projects .col_right p,
+#projects .down_left p,
+#projects .down_right p{
+    font-family: 'Lora', serif;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#projects img{
+    width: 40vw;
+}
+
+#projects .projectwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#projects .col_left {
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+#projects .col_right {
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+#projects .projectwrapper1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+#projects .down_left {
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+#projects .down_right {
+    justify-content: center;
+    margin: 2vw;
+    padding: 2vw;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+font-family: 'Montserrat',
+sans-serif;
+font-family: 'Lora',
+serif;
