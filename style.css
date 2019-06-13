@@ -1,155 +1,506 @@
-body {
-    margin: 0;
-
-}
-
-img {
-    width:  100%;
-}
-
 * {
     box-sizing: border-box;
 }
 
-/* BURGERMENU */
-#menuknap {
-    display: inline-block;
-    font-family: sans-serif;
-    padding: 1rem 1rem 0 1rem;
-    font-size: 2rem;
+
+body {
+    margin: 0;
+}
+
+
+/******generella inställningar slut**************/
+
+
+
+img {
+    width: 100%;
+
+}
+
+figure {
+    margin: 0;
+}
+
+section,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
     position: fixed;
-    margin: 0;
-    padding: 0;
-    z-index: 100;
+    top: 0;
 }
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
+#splash {
     width: 100vw;
     height: 100vh;
-}
-
-.hidden {
-    display: none;
-    transform: scale(0);
-    transform: translateX(-100%);
-    opacity: 0;
+    max-width: none;
+    background-image: url(Billede1.png);
+    background-size: cover;
+    background-position: 55% 0%;
 }
 
 
-/**** BURGER MENU ****/
+
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#om .col {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+.pic {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#om {
+    background-color: #BE9F86;
+
+}
+
+
+
+#eksempler .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#eksempler .col {
+    flex-grow: 1;
+    flex-basis: 550px;
+    /* child */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#eksempler {
+    background-color: #BE9F86;
+
+}
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#typografi img {
+    width: 100%;
+}
+
+#typografi .col_wide {
+    flex-grow: 3;
+    flex-basis: 300px;
+}
+
+#typografi .top {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+
+
+}
+
+#typografi .image {
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+#typografi .txt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#typografi {
+    background-color: #BE9F86;
+}
+
+#komposition_farver .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#komposition_farver .col_wide {
+    /* child */
+    flex-grow: 1;
+    flex-basis: 750px;
+    /* parent*/
+    display: flex;
+
+}
+
+.ramrunt {
+    padding: 15px;
+    border: 15px solid #BE9F86;
+
+
+}
+
+#komposition_farver .content {
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.space {
+    padding: 10px;
+    margin: 10px;
+}
+
+.space2 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.space3 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.space4 {
+    padding: 10px;
+    margin: 10px;
+}
+
+.space5 {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+
+#komposition_farver .colors {
+    flex-direction: column;
+    flex-basis: 200px;
+    padding: 10px;
+    margin: 10px;
+
+
+
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 250px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+#komposition_farver {
+    background-color: beige;
+}
+
+#links .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#links {
+    background-color: #BE9F86;
+}
+
+#links a:hover {
+    color: white;
+    background-color: sandybrown;
+
+}
+
+#ekstra .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ekstra {
+    background-color: beige;
+}
+
+
+#ekstra .content {
+    flex-basis: 300px;
+
+}
+
+.col {
+    padding: 15px;
+    border: 15px solid #BE9F86;
+
+}
+
+
+p {
+    font-family: 'mukta';
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+.colorbox {
+    height: 200px;
+    width: 200px;
+}
+
+.colorbox2 {
+    height: 80px;
+    width: 80px;
+}
+
+.color1 {
+    background-color: #BE9F86;
+}
+
+.color2 {
+    background-color: #D76B2B;
+}
+
+.color3 {
+    background-color: #BD4D1C;
+}
+
+.color4 {
+    background-color: #F2C3B7;
+}
+
+.color5 {
+    background-color: #700D03;
+}
+
+@font-face {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.hone {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 10px;
+}
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 8rem;
-    position: absolute;
-    top: 160px;
-    left: 330px;
-
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
 }
 
-#forside h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    position: absolute;
-    top: 760px;
-    left: 600px;
-}
-
-#forside h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    position: absolute;
-    top: 757px;
-    left: 750px;
-}
-
-
-
-
-
-#forside p{
-    font-family: 'Montserrat', sans-serif;
+h2 {
     font-size: 2rem;
-    position: absolute;
-    top: 10px;
-    left: 610px;
+    font-family: 'Roboto', sans-serif;
+    color: #1d1d1d;
+    padding: 10px;
+    margin: 10px;
 
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    color: #1d1d1d;
+    font-weight: 900;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
 
-
-#forside .boks {
-    position: absolute;
-    width: 1440px;
-    height: 820px;
-    background-color: whitesmoke;
 }
 
-/* FORSIDE SLUT */
+.htreor h3 {
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid #BE9F86;
+    background-color: sandybrown;
 
-
-/* PROJECTS START */
-
-#projects .figure{
-    margin: 0;
 }
 
-#projects .col_left p,
-#projects .col_right p,
-#projects .down_left p,
-#projects .down_right p{
-    font-family: 'Lora', serif;
-    font-size: 2vw;
-    text-align: center;
+h4 {
+    font-size: 1rem;
+    font-family: 'Mukta', sans-serif;
+    color: #BD4D1C;
+    padding: 20px;
+    margin: 10px;
 }
 
-#projects img{
-    width: 40vw;
+h5 {
+    font-size: 1rem;
+    font-family: 'Mukta';
+    color: #1d1d1d;
+    padding: 10px;
+    margin: 10px;
+
 }
 
-#projects .projectwrapper {
+h6 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    color: #1d1d1d;
+    padding: 10px;
+    margin: 10px;
+}
+
+#alt {
+    background-color: sandybrown;
+    flex-wrap: wrap;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#projects .col_left {
-    margin: 2vw;
-    padding: 2vw;
+    padding: 10px;
 
 }
 
-#projects .col_right {
-    margin: 2vw;
-    padding: 2vw;
+/* det under är før style tile */
+
+.toq {
+    flex-grow: 1;
+    flex-basis: 600px;
+    flex-basis: 300px;
 
 }
 
-#projects .projectwrapper1 {
+.bott {
+    flex-grow: 1;
+    /*flex-basis 600px;*/
+    flex-basis: 300px
+}
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+/* Det är styletile */
+
+/*********menu*********/
+
+/* unvisited link */
+header nav a:link {
+    color: white;
+}
+
+/* visited link */
+header nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: black;
+}
+
+/* selected link */
+header nav a:active {
+    color: black;
+}
+
+header {
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+}
+
+header nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2rem;
+    margin: 1rem 1.5rem;
 
 }
 
-#projects .down_left {
-    margin: 2vw;
-    padding: 2vw;
-
+header nav a {
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
 }
 
-#projects .down_right {
-    justify-content: center;
-    margin: 2vw;
-    padding: 2vw;
+@media only screen and (min-width:1200px) {
+    header {
+        /*background-color: rgba(2, 2, 2, 2, 2);*/
+    }
 
+
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0.5rem;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        padding: 0 1rem 0 0;
+        border-right: 0.2rem solid #f2e4d7;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+        padding: 0;
+    }
 }
 
+/****************************  Menu slut  ****************************/
 
 
 
@@ -159,11 +510,9 @@ h1 {
 
 
 
+@media only screen and (min-width: 800px) {
+    #eksempler .col {
+        flex-basis: 200px;
+    }
 
-
-
-
-font-family: 'Montserrat',
-sans-serif;
-font-family: 'Lora',
-serif;
+}
