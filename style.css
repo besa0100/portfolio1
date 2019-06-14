@@ -5,10 +5,9 @@
 
 body {
     margin: 0;
+    /*background-color: aqua;*/
+
 }
-
-
-/******generella inställningar slut**************/
 
 
 
@@ -21,16 +20,119 @@ figure {
     margin: 0;
 }
 
+/* GÖR SÅ ATT DET HELA TRYCKS IN */
+
 section,
 footer {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+
+
+/* SLUT PÅ DET */
+
 header {
     position: fixed;
     top: 0;
 }
+
+@font-face {
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+
+/*** GENERELLA INSTÄLLNINGAR ***/
+
+
+/*********menu*********/
+
+/* unvisited link */
+header nav a:link {
+    color: white;
+}
+
+/* visited link */
+header nav a:visited {
+    color: darkgrey;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: black;
+}
+
+/* selected link */
+header nav a:active {
+    color: black;
+}
+
+header {
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 2rem;
+    margin: 1rem 1.5rem;
+
+}
+
+header nav a {
+    font-size: 1.5rem;
+    font-family: 'Mukta', sans-serif;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
+}
+
+@media only screen and (min-width:1200px) {
+    header {
+        /*background-color: rgba(2, 2, 2, 2, 2);*/
+    }
+
+
+
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0.5rem;
+    }
+
+    header nav a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        padding: 0 1rem 0 0;
+        border-right: 0.2rem solid #f2e4d7;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+        padding: 0;
+    }
+}
+
+/****************************  Menu slut  ****************************/
+
+
+
+/** ALLA DIVS MED COL HAR PADDING **/
+.col {
+    padding: 15px;
+}
+
+/*** SLUT ********/
+
+
+/**** SPLASH BILLDEN ***/
+
 
 #splash {
     width: 100vw;
@@ -40,6 +142,12 @@ header {
     background-size: cover;
     background-position: 55% 0%;
 }
+
+
+/**** SLUT ***/
+
+
+/*** OM MIG SEKTIONEN ***/
 
 
 
@@ -61,7 +169,7 @@ header {
 }
 
 #om {
-    background-color: #BE9F86;
+    background-color: lightgray;
 
 }
 
@@ -83,7 +191,7 @@ header {
 }
 
 #eksempler {
-    background-color: #BE9F86;
+    background-color: lightgray;
 
 }
 
@@ -159,12 +267,7 @@ header {
 
 }
 
-.ramrunt {
-    padding: 15px;
-    border: 15px solid #BE9F86;
 
-
-}
 
 #komposition_farver .content {
     flex-direction: column;
@@ -231,8 +334,11 @@ header {
     padding: 10px;
 }
 
+
+
 #links {
     background-color: #BE9F86;
+    font-family: 'mukta';
 }
 
 #links a:hover {
@@ -257,12 +363,6 @@ header {
 
 }
 
-.col {
-    padding: 15px;
-    border: 15px solid #BE9F86;
-
-}
-
 
 p {
     font-family: 'mukta';
@@ -272,7 +372,7 @@ p {
 }
 
 
-.colors {
+/*.colors {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -281,7 +381,7 @@ p {
     margin-left: 80px;
     margin-right: 80px;
 
-}
+}*/
 
 .colorbox {
     height: 200px;
@@ -313,11 +413,7 @@ p {
     background-color: #700D03;
 }
 
-@font-face {
-    font-family: 'Mukta', sans-serif;
-    font-family: 'Roboto', sans-serif;
 
-}
 
 .hone {
     font-size: 2rem;
@@ -346,7 +442,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Mukta', sans-serif;
     color: #1d1d1d;
     font-weight: 900;
@@ -356,13 +452,7 @@ h3 {
 
 }
 
-.htreor h3 {
-    padding: 10px;
-    margin: 10px;
-    border: 10px solid #BE9F86;
-    background-color: sandybrown;
 
-}
 
 h4 {
     font-size: 1rem;
@@ -372,141 +462,195 @@ h4 {
     margin: 10px;
 }
 
-h5 {
-    font-size: 1rem;
-    font-family: 'Mukta';
-    color: #1d1d1d;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-h6 {
-    font-family: 'Mukta', sans-serif;
-    font-size: 1rem;
-    color: #1d1d1d;
-    padding: 10px;
-    margin: 10px;
-}
-
-#alt {
-    background-color: sandybrown;
-    flex-wrap: wrap;
-}
 
 
-.icon {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
+/*** ANIMATIONS DOKUMENT START **/
 
-}
 
-/* det under är før style tile */
-
-.toq {
-    flex-grow: 1;
-    flex-basis: 600px;
-    flex-basis: 300px;
-
-}
-
-.bott {
-    flex-grow: 1;
-    /*flex-basis 600px;*/
-    flex-basis: 300px
-}
-
-header {
-    position: fixed;
-    top: 0;
-}
-
-/* Det är styletile */
-
-/*********menu*********/
-
-/* unvisited link */
-header nav a:link {
+.animation h2 {
     color: white;
+    font-size: 1.8rem;
+    margin: 0vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* visited link */
-header nav a:visited {
-    color: black;
+.animation h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0.5vw 0.5vw 0.5vw 0vw;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-/* mouse over link */
-header nav a:hover {
-    color: black;
+.animation p {
+    color: white;
+    font-size: 1rem;
+    margin: 1vw 1vw 1vw 0vw;
+    font-family: 'Lora', sans-serif;
 }
 
-/* selected link */
-header nav a:active {
-    color: black;
+#spillet {
+    background-color: #232933;
+    margin: 0vw;
+    padding: 0vw;
 }
 
-header {
-    position: fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
+#startspillet {
+    margin: 0vw;
+    padding: 0vw;
+
 }
 
-header nav {
+#beskrivelse {
+    background-color: #232933;
+    margin: 0vw 0vw;
+    padding: 3vw 15vw;
+    /**outline: 0.2px solid #FB9136;**/
+}
+
+#beskrivelse #sectionwrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 2rem;
-    margin: 1rem 1.5rem;
+    flex-wrap: wrap;
+    text-align: center;
 
 }
 
-header nav a {
-    font-size: 1.5rem;
-    font-family: 'Mukta', sans-serif;
-    margin: 0.25rem 0;
-    padding: 0.25rem 0;
+#beskrivelse #pitch {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 2vw 0vw 0vw;
 }
 
-@media only screen and (min-width:1200px) {
-    header {
-        /*background-color: rgba(2, 2, 2, 2, 2);*/
-    }
-
-
-
-    header nav {
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: 0.5rem;
-    }
-
-    header nav a {
-        font-size: 1.5rem;
-        margin: 0 0.5rem;
-        padding: 0 1rem 0 0;
-        border-right: 0.2rem solid #f2e4d7;
-    }
-
-    header nav a:last-child {
-        border-right: none;
-        padding: 0;
-    }
+#beskrivelse #maalgruppebeskrivelse {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 0vw 0vw 2vw;
 }
 
-/****************************  Menu slut  ****************************/
+/*#beskrivelse #medlemmer, {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 2vw 0vw 0vw;
+} */
+
+#beskrivelse #ide {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+
+/**** UX DOKUMENTATION ***/
+
+
+.galleri h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.galleri h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0.5vw 0.5vw 0.5vw 0vw;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.galleri p {
+    color: white;
+    font-size: 1rem;
+    margin: 1vw 1vw 1vw 0vw;
+    font-family: 'Lora', sans-serif;
+}
+
+#prototyp {
+    background-color: #232933;
+    margin: 0vw;
+    padding: 0vw;
+}
+
+#startprototyp {
+    margin: 0vw;
+    padding: 0vw;
+
+}
+
+#beskrivelsen {
+    background-color: #232933;
+    margin: 0vw 0vw;
+    padding: 3vw 15vw;
+    /**outline: 0.2px solid #FB9136;**/
+}
+
+#beskrivelsen #sectionwrappern {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+#beskrivelsen #pitchn {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 2vw 0vw 0vw;
+}
+
+#beskrivelsen #maalgruppebeskrivelsen {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+/*#beskrivelse #medlemmer, {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 2vw 0vw 0vw;
+} */
+
+#beskrivelsen #iden {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0vw 0vw 0vw 2vw;
+}
+
+
+/** SLUT UX DOK ***/
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+/*.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+} */
+
+
+
+
+
+
+
+/*** MEDIA QUERY FÖR MINA PROJECTS ***/
 
 
 
