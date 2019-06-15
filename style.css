@@ -13,11 +13,64 @@ body {
 
 img {
     width: 100%;
+    padding: 5px;
 
 }
 
 figure {
     margin: 0;
+}
+
+font-family: 'Lora',
+serif;
+font-family: 'Montserrat',
+sans-serif;
+
+
+
+p {
+    font-family: 'roboto', sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+li {
+    font-family: 'lora', serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat'sans-serif;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Montserrat'sans-serif;
+    color: #1d1d1d;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: 'Montserrat'sans-serif;
+    color: #1d1d1d;
+    font-weight: 900;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+
 }
 
 /* GÖR SÅ ATT DET HELA TRYCKS IN */
@@ -94,9 +147,7 @@ header nav a {
 }
 
 @media only screen and (min-width:1200px) {
-    header {
-        /*background-color: rgba(2, 2, 2, 2, 2);*/
-    }
+    header {}
 
 
 
@@ -195,138 +246,6 @@ header nav a {
 
 }
 
-#typografi .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#typografi img {
-    width: 100%;
-}
-
-#typografi .col_wide {
-    flex-grow: 3;
-    flex-basis: 300px;
-}
-
-#typografi .top {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
-
-
-}
-
-#typografi .image {
-    flex-grow: 1;
-    flex-basis: 300px;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
-}
-
-#typografi .txt {
-    flex-grow: 1;
-    flex-basis: 300px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#typografi .bottom {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    margin: 10px;
-
-
-}
-
-#typografi .col_narrow {
-    flex-grow: 1;
-    flex-basis: 300px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#typografi {
-    background-color: #BE9F86;
-}
-
-#komposition_farver .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-#komposition_farver .col_wide {
-    /* child */
-    flex-grow: 1;
-    flex-basis: 750px;
-    /* parent*/
-    display: flex;
-
-}
-
-
-
-#komposition_farver .content {
-    flex-direction: column;
-    flex-basis: 400px;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-.space {
-    padding: 10px;
-    margin: 10px;
-}
-
-.space2 {
-    padding: 10px;
-    margin: 10px;
-}
-
-.space3 {
-    padding: 10px;
-    margin: 10px;
-}
-
-.space4 {
-    padding: 10px;
-    margin: 10px;
-}
-
-.space5 {
-    padding: 10px;
-    margin: 10px;
-}
-
-
-
-
-#komposition_farver .colors {
-    flex-direction: column;
-    flex-basis: 200px;
-    padding: 10px;
-    margin: 10px;
-
-
-
-}
-
-#komposition_farver .col_narrow {
-    flex-grow: 1;
-    flex-basis: 250px;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-
-#komposition_farver {
-    background-color: beige;
-}
 
 #links .sectionwrapper {
     display: flex;
@@ -337,131 +256,14 @@ header nav a {
 
 
 #links {
-    background-color: #BE9F86;
-    font-family: 'mukta';
+    background-color: lightgray;
 }
 
 #links a:hover {
     color: white;
-    background-color: sandybrown;
+    background-color: #1d1d1d;
 
 }
-
-#ekstra .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#ekstra {
-    background-color: beige;
-}
-
-
-#ekstra .content {
-    flex-basis: 300px;
-
-}
-
-
-p {
-    font-family: 'mukta';
-    font-size: 1rem;
-    padding: 10px;
-    margin: 10px;
-}
-
-
-/*.colors {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
-
-}*/
-
-.colorbox {
-    height: 200px;
-    width: 200px;
-}
-
-.colorbox2 {
-    height: 80px;
-    width: 80px;
-}
-
-.color1 {
-    background-color: #BE9F86;
-}
-
-.color2 {
-    background-color: #D76B2B;
-}
-
-.color3 {
-    background-color: #BD4D1C;
-}
-
-.color4 {
-    background-color: #F2C3B7;
-}
-
-.color5 {
-    background-color: #700D03;
-}
-
-
-
-.hone {
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #1d1d1d;
-    text-transform: uppercase;
-    padding: 10px;
-}
-
-h1 {
-    font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
-    color: #1d1d1d;
-    text-transform: uppercase;
-    padding: 10px;
-    margin: 10px;
-}
-
-h2 {
-    font-size: 2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #1d1d1d;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-family: 'Mukta', sans-serif;
-    color: #1d1d1d;
-    font-weight: 900;
-    padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-
-}
-
-
-
-h4 {
-    font-size: 1rem;
-    font-family: 'Mukta', sans-serif;
-    color: #BD4D1C;
-    padding: 20px;
-    margin: 10px;
-}
-
 
 
 
@@ -622,31 +424,6 @@ h4 {
 
 
 /** SLUT UX DOK ***/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-
-} */
-
-
-
-
 
 
 
