@@ -5,7 +5,6 @@
 
 body {
     margin: 0;
-    /*background-color: aqua;*/
 
 }
 
@@ -29,20 +28,21 @@ sans-serif;
 
 
 p {
-    font-family: 'roboto', sans-serif;
-    font-size: 0.9rem;
-    padding: 5px;
-    margin: 5px;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px;
 }
+
+/** MELLANRUM PÅ LINKS TEXTEN **/
 
 li {
-    font-family: 'lora', serif;
-    font-size: 0.9rem;
     padding: 5px;
     margin: 5px;
+
 }
 
-
+/**** SLUT PÅ LINKS TEXT ***/
 
 h1 {
     font-size: 2.5rem;
@@ -66,7 +66,6 @@ h3 {
     font-size: 1.2rem;
     font-family: 'Montserrat'sans-serif;
     color: #1d1d1d;
-    font-weight: 900;
     padding: 10px;
     margin: 10px;
     font-weight: bold;
@@ -74,12 +73,12 @@ h3 {
 }
 
 /* GÖR SÅ ATT DET HELA TRYCKS IN */
-
 section,
 footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 
 
@@ -90,13 +89,6 @@ header {
     top: 0;
 }
 
-@font-face {
-    font-family: 'Mukta', sans-serif;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-
 
 
 /*** GENERELLA INSTÄLLNINGAR ***/
@@ -104,69 +96,121 @@ header {
 
 /*********menu*********/
 
-/* unvisited link */
-header nav a:link {
+
+.hidden {
+    display: none;
+}
+
+/*burger menu*/
+#menu .hidden {
+    display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lora', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+
+#menu a {
+    line-height: 3rem;
+}
+
+#menu li {
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    border-bottom: 1px solid black;
+    margin-right: 70vw;
+}
+
+
+#menuknap {
+    display: flex;
+    display: inline-block;
+    left: 75vw;
+    font-size: 2rem;
+
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: center;
+}
+
+
+.burgermenu {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    justify-content: flex-end;
+    margin: 1vw 4vw;
+}
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
+/*************************************top menu**************************/
+.topnav {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    font-family: 'Lora', sans-serif;
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    justify-content: center;
+    display: flex;
+}
+
+.topnav a:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    color: black;
+}
+
+.topnav a.active {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
     color: white;
 }
 
-/* visited link */
-header nav a:visited {
-    color: darkgrey;
-}
 
-/* mouse over link */
-header nav a:hover {
-    color: black;
-}
-
-/* selected link */
-header nav a:active {
-    color: black;
-}
-
-header {
-    position: fixed;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 100%;
-}
-
-header nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 2rem;
-    margin: 1rem 1.5rem;
-
-}
-
-header nav a {
-    font-size: 1.5rem;
-    font-family: 'Mukta', sans-serif;
-    margin: 0.25rem 0;
-    padding: 0.25rem 0;
-}
-
-@media only screen and (min-width:1200px) {
-    header {}
-
-
-
-    header nav {
-        flex-direction: row;
-        justify-content: flex-end;
-        margin: 0.5rem;
-    }
-
-    header nav a {
-        font-size: 1.5rem;
-        margin: 0 0.5rem;
-        padding: 0 1rem 0 0;
-        border-right: 0.2rem solid #f2e4d7;
-    }
-
-    header nav a:last-child {
-        border-right: none;
-        padding: 0;
+@media only screen and (max-width: 700px) {
+    .topnav {
+        display: none;
     }
 }
 
@@ -187,9 +231,9 @@ header nav a {
 
 #splash {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     max-width: none;
-    background-image: url(Billede1.png);
+    background-image: url(splash.jpg);
     background-size: cover;
     background-position: 55% 0%;
 }
@@ -220,7 +264,7 @@ header nav a {
 }
 
 #om {
-    background-color: lightgray;
+    background-color: #fafafa;
 
 }
 
@@ -242,7 +286,7 @@ header nav a {
 }
 
 #eksempler {
-    background-color: lightgray;
+    background-color: #fafafa;
 
 }
 
@@ -256,7 +300,7 @@ header nav a {
 
 
 #links {
-    background-color: lightgray;
+    background-color: #fafafa;
 }
 
 #links a:hover {
@@ -271,7 +315,7 @@ header nav a {
 
 
 .animation h2 {
-    color: white;
+    color: black;
     font-size: 1.8rem;
     margin: 0vw;
     font-family: 'Montserrat', sans-serif;
@@ -280,7 +324,7 @@ header nav a {
 }
 
 .animation h3 {
-    color: white;
+    color: black;
     font-size: 1.2rem;
     margin: 0.5vw 0.5vw 0.5vw 0vw;
     font-family: 'Montserrat', sans-serif;
@@ -288,29 +332,29 @@ header nav a {
 }
 
 .animation p {
-    color: white;
+    color: black;
     font-size: 1rem;
     margin: 1vw 1vw 1vw 0vw;
     font-family: 'Lora', sans-serif;
 }
 
 #spillet {
-    background-color: #232933;
+    /*background-color: #232933; */
     margin: 0vw;
     padding: 0vw;
 }
 
 #startspillet {
-    margin: 0vw;
-    padding: 0vw;
+    width: 100vw;
+    /*margin: 0vw;
+    padding: 0vw;*/
 
 }
 
 #beskrivelse {
-    background-color: #232933;
-    margin: 0vw 0vw;
+    background-color: #fafafa;
+    margin: 0 auto;
     padding: 3vw 15vw;
-    /**outline: 0.2px solid #FB9136;**/
 }
 
 #beskrivelse #sectionwrapper {
@@ -332,11 +376,6 @@ header nav a {
     margin: 0vw 0vw 0vw 2vw;
 }
 
-/*#beskrivelse #medlemmer, {
-    flex-grow: 1;
-    flex-basis: 200px;
-    margin: 0vw 2vw 0vw 0vw;
-} */
 
 #beskrivelse #ide {
     flex-grow: 1;
@@ -349,7 +388,7 @@ header nav a {
 
 
 .galleri h2 {
-    color: white;
+    color: black;
     font-size: 1.8rem;
     margin: 0vw;
     font-family: 'Montserrat', sans-serif;
@@ -358,7 +397,7 @@ header nav a {
 }
 
 .galleri h3 {
-    color: white;
+    color: black;
     font-size: 1.2rem;
     margin: 0.5vw 0.5vw 0.5vw 0vw;
     font-family: 'Montserrat', sans-serif;
@@ -366,27 +405,28 @@ header nav a {
 }
 
 .galleri p {
-    color: white;
+    color: black;
     font-size: 1rem;
     margin: 1vw 1vw 1vw 0vw;
     font-family: 'Lora', sans-serif;
 }
 
 #prototyp {
-    background-color: #232933;
+    /*background-color: #fafafa;*/
     margin: 0vw;
     padding: 0vw;
 }
 
 #startprototyp {
+    width: 100vw;
     margin: 0vw;
     padding: 0vw;
 
 }
 
 #beskrivelsen {
-    background-color: #232933;
-    margin: 0vw 0vw;
+    background-color: #fafafa;
+    margin: 0 auto;
     padding: 3vw 15vw;
     /**outline: 0.2px solid #FB9136;**/
 }
@@ -424,6 +464,38 @@ header nav a {
 
 
 /** SLUT UX DOK ***/
+
+
+
+/** FOOTER **/
+
+#footer #footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#footer #socialmedia img {
+    width: 3rem;
+}
+
+#footer #socialmedia {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#socialmedia {
+    flex-basis: 300px;
+
+
+}
+
+
+
+/** FOOTER SLUT **/
 
 
 

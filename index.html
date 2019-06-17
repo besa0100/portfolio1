@@ -18,23 +18,28 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#splash">Portfolio</a>
+        <div class="topnav">
+            <nav>
+                <a href="index.html">Portfolio</a>
+                <a href="#om">About</a>
+                <a href="#eksempler">Projects</a>
+                <a href="#links">Links</a>
 
-            <a href="#om">About</a>
-
-            <a href="#eksempler">Projects</a>
-
-            <a href="#links">Links</a>
-
-            <a href="anima_dok.html"></a>
-
-
-
-        </nav>
-
+            </nav>
+        </div>
+        <!--burger menu-->
+        <div class="burgermenu">
+            <nav>
+                <div id="menuknap">☰</div>
+                <ul id="menu" class="hidden">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="#om">About</a></li>
+                    <li> <a href="#eksempler">Projects</a></li>
+                    <li> <a href="#links">Links</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
     <section id="splash"></section>
 
 
@@ -164,7 +169,23 @@
 
 
 
-    <footer>@copyright Besart</footer>
+    <footer>
+        <div id="footer">
+            <div id="socialmedia">
+
+                <h2>Social Media</h2>
+
+                <a href="https://www.facebook.com/" target="_blank">
+
+
+                    <img src="socialbilder/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/besartbara/?hl=da" target="_blank">
+                    <img src="socialbilder/insta_menu.png" alt="instagram"></a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
