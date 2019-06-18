@@ -209,6 +209,7 @@ a {
 #om .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid black;
 }
 
 
@@ -223,7 +224,7 @@ a {
 }
 
 #om {
-    background-color: #fafafa;
+    background-color: white;
 
 }
 
@@ -232,6 +233,7 @@ a {
 #eksempler .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid black;
 
 }
 
@@ -244,8 +246,10 @@ a {
     justify-content: space-between;
 }
 
+
+
 #eksempler {
-    background-color: #fafafa;
+    background-color: white;
 
 }
 
@@ -256,12 +260,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    border-top: 1px solid black;
 }
 
 
 
 #links {
-    background-color: #fafafa;
+    background-color: white;
 }
 
 #links a:hover {
@@ -352,7 +357,7 @@ h3 {
 }
 
 #beskrivelse {
-    background-color: #fafafa;
+    background-color: white;
     margin: 0 auto;
     padding: 3vw 15vw;
 }
@@ -440,7 +445,7 @@ h3 {
 }
 
 #beskrivelsen {
-    background-color: #fafafa;
+    background-color: white;
     margin: 0 auto;
     padding: 3vw 15vw;
     /**outline: 0.2px solid #FB9136;**/
@@ -514,6 +519,7 @@ h3 {
 #footer #socialmedia {
     margin: 0 auto;
     text-align: center;
+    border-top: 1px solid black;
 
 }
 
