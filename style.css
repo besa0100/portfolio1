@@ -377,6 +377,16 @@ h3 {
     margin: 0vw 0vw 0vw 2vw;
 }
 
+#maalgruppebeskrivelse li {
+    font-family: 'Lora', serif;
+}
+
+#maalgruppebeskrivelse a:hover {
+    color: white;
+    background-color: #1d1d1d;
+
+}
+
 
 #beskrivelse #ide {
     flex-grow: 1;
@@ -450,6 +460,16 @@ h3 {
     flex-grow: 1;
     flex-basis: 200px;
     margin: 0vw 0vw 0vw 2vw;
+}
+
+#maalgruppebeskrivelsen li {
+    font-family: 'lora', serif;
+}
+
+#maalgruppebeskrivelsen a:hover {
+    color: white;
+    background-color: #1d1d1d;
+
 }
 
 /*#beskrivelse #medlemmer, {
