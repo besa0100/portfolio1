@@ -387,6 +387,10 @@ h3 {
 
 }
 
+#maalgruppebeskrivelse ul {
+    list-style: none;
+}
+
 
 #beskrivelse #ide {
     flex-grow: 1;
@@ -470,6 +474,10 @@ h3 {
     color: white;
     background-color: #1d1d1d;
 
+}
+
+#maalgruppebeskrivelsen ul {
+    list-style: none;
 }
 
 /*#beskrivelse #medlemmer, {
